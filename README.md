@@ -3,7 +3,7 @@
 ### 1. Clone & Install
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/techerrorNR/-VersionNextTask-.git
 cd machine-task
 
 composer install
@@ -32,20 +32,21 @@ DB_PASSWORD=
 php artisan migrate:fresh --seed
 ```
 
-👉 This seeds **users + products**.
+This seeds **users + products**.
 All demo users have password: **`password`**
 
 ### 4. Start Server
 
 ```bash
 php artisan serve
+npm run dev  
 ```
 
 Visit → `http://127.0.0.1:8000`
 
 ---
 
-## 🔑 Authentication
+##  Authentication
 
 * Login accepts **email OR username** in the same field (`login`).
 * Default seeded users:
@@ -57,7 +58,7 @@ Visit → `http://127.0.0.1:8000`
 
 ---
 
-## 📌 How to Test Features
+##  How to Test Features
 
 ### A) Create User + Products
 
@@ -85,7 +86,7 @@ Visit → `http://127.0.0.1:8000`
 
 ---
 
-## 🛠️ Seeding & Test Data
+##  Seeding & Test Data
 
 ### 1. Seeder (bulk demo)
 
@@ -110,7 +111,7 @@ This **does not delete old data**, it always adds new.
 
 ---
 
-## ✅ Key Routes
+## Key Routes
 
 * `/login` – Login with username/email
 * `/task/create` – Create user + products
@@ -120,16 +121,27 @@ This **does not delete old data**, it always adds new.
 
 ---
 
-## 📖 Interviewer Notes
+##   Notes
 
 * **Login using username or email** → shows we modified Breeze auth.
 * **Add products with flat/discount** → shows conditional field logic + JS calculations.
 * **Final amount auto-calculated** → shows client-side + server-side validation.
-* **Records page** → server-side processing, search, filters, pagination (without relying on Yajra).
+* **Records page** → server-side processing, search, filters, pagination .
 * **Authorization** → Only product owners can delete/edit their own records.
 * **Seeding/Factories** → Demo data ready out-of-the-box with `php artisan migrate:fresh --seed`.
 
 ---
+<img width="935" height="826" alt="image" src="https://github.com/user-attachments/assets/532f338d-f9b5-47f4-8911-ea1ce5c96f69" />
+
+<img width="835" height="624" alt="image" src="https://github.com/user-attachments/assets/2127ecfe-ec59-4346-b048-73f027460e9d" />
+
+<img width="1622" height="894" alt="image" src="https://github.com/user-attachments/assets/d844a486-de31-4631-9e35-382a14a4f242" />
+<img width="1896" height="899" alt="image" src="https://github.com/user-attachments/assets/7a66020e-fbea-49a4-bd5f-74df254ffaff" />
+<img width="1377" height="838" alt="image" src="https://github.com/user-attachments/assets/fdafbaee-6ffb-48da-8182-53aae3c36385" />
+
+
+
+
 
 ## License
 
@@ -137,12 +149,3 @@ MIT License. Laravel framework © Laravel LLC.
 
 ---
 
-👉 This way, the interviewer just has to:
-
-1. Run migrations + seeder
-2. Login with `admin/password`
-3. Test product form & records page
-
----
-
-Do you want me to also add **screenshots + sample credentials table** in the README (looks more impressive for interviewer)?
