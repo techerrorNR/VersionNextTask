@@ -76,7 +76,6 @@
                                     <div class="md:col-span-2">
                                         <label class="block text-sm font-medium mb-1">Password <span class="text-red-500">*</span></label>
                                         <input type="password" name="user[password]" class="w-full rounded border-gray-300">
-                                        <p class="text-xs text-gray-500 mt-1">Stored securely (hashed).</p>
                                     </div>
                                 </div>
                             </div>
